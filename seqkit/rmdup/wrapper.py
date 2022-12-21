@@ -11,9 +11,10 @@ import argparse
 extra = snakemake.params.get("extra", "")
 log = snakemake.log_fmt_shell(stdout=False, stderr=True)
 
+by = snakemake.params.get("by", "")
 if by == "sequence":
     flag = "--by-seq"
 elif by == "name":
     flag = "--by-name"
 
-shell("f(seqkit rmdup {flag} {extra} ) {log}")
+shell("(seqkit rmdup {flag} {extra} {snakemake.input} > {snakemake.output}) {log}")
