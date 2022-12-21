@@ -13,7 +13,7 @@ log = snakemake.log_fmt_shell(stdout=False, stderr=True)
 
 if by == "sequence":
     flag = "--by-seq"
-elif by == "name"
+elif by == "name":
     flag = "--by-name"
 
 shell("f(seqkit rmdup {flag} {extra} ) {log}")
