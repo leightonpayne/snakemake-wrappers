@@ -10,4 +10,4 @@ from snakemake.shell import shell
 extra = snakemake.params.get("extra", "")
 log = snakemake.log_fmt_shell(stdout=False, stderr=True)
 
-shell("(seqtk subseq {extra} {snakemake.input.faa} {snakemake.input.list} > {snakemake.output}) {log})"
+shell("(seqtk subseq {extra} {snakemake.input.faa} {snakemake.input.list} > {snakemake.output}) {log}")
