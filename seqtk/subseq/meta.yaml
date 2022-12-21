@@ -1,0 +1,11 @@
+name: seqtk-subseq
+description: |
+  extract subsequences from FASTA/Q
+url: https://github.com/lh3/seqtk
+authors:
+  - Leighton Payne
+input:
+  - FASTA file
+  - List of sequence accessions
+output:
+  - FASTA file
