@@ -4,7 +4,3 @@ description: |
 url: https://github.com/shenwei356/seqkit
 authors:
   - Leighton Payne
-input:
-  - FASTA file
-output:
-  - FASTA file
