@@ -11,4 +11,10 @@ import argparse
 extra = snakemake.params.get("extra", "")
 log = snakemake.log_fmt_shell(stdout=False, stderr=True)
 
-shell("(seqkit rmdup {extra} {snakemake.input} > {snakemake.output}) {log}")
+shell(
+  "seqkit rmdup "
+  "{extra} "
+  "{snakemake.input} "
+  "> {snakemake.output} "
+  "{log}"
+)
