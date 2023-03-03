@@ -13,6 +13,7 @@ log = snakemake.log_fmt_shell(stdout=False, stderr=True)
 
 shell(
   "seqkit rmdup "
+  "--threads {snakemake.threads} "
   "{extra} "
   "{snakemake.input} "
   "> {snakemake.output} "
