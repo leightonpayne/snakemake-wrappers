@@ -15,7 +15,7 @@ shell(
   "mmseqs apply "
   "{snakemake.input} "
   "{snakemake.output} "
-  "-- {snakemake.params.program} "
+  "-- {snakemake.params.program} -"
   "{extra} "
   "{log}"
 )
