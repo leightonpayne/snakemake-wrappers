@@ -1,0 +1,6 @@
+name: hhsuite-hhsearch
+description: |
+  Search a database of HMMs with a query alignment or query HMM
+url: https://github.com/soedinglab/hh-suite
+authors:
+  - Leighton Payne

@@ -1,0 +1,6 @@
+name: mmseqs-apply
+description: |
+  "Call an external tool on each entry of an MMseqs2 database."
+url: https://github.com/soedinglab/mmseqs2
+authors:
+  - Leighton Payne
